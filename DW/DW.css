@@ -1,0 +1,339 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    
+  }
+  
+  /* Background Video */
+  #BGVD {
+    background: url(img/black-ops-4.1920x1080.mp4);
+    background-size:cover;
+    position: fixed;
+    z-index: -1;
+    
+  }
+  
+  /* Header */
+  header {
+    background: rgba(0, 0, 0, 0.64);
+    left: 0;
+    top: 0;
+    height: 50px;
+    position: fixed;
+    z-index: 2;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  
+  nav {
+    padding-top: 100px;
+    margin: 0% 5%;
+    height: 50px;
+    background-color: #f79aa6;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    transition: box-shadow 0.3s ease;
+    box-shadow: inset 0 5px 10px rgba(192, 169, 206, 0.5);
+    height: 50px;
+    display: flex; 
+    align-items: center;
+    color: rgbrgba(0, 0, 0, 0.64);
+  }
+  
+  nav img{
+    padding: 0.4rem;
+    height: 35px;
+    width: auto;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+li {
+    float: right;
+  }
+  
+  nav ul li a {
+    display: block;
+  color: rgb(211, 130, 55);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+
+  nav li a:hover {
+    background-color: #dfedf0;
+  }
+  
+  /* Carousel */
+  .carousel {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 5%;
+    height:600px;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    width: 100%;
+      height: auto;
+      object-fit:cover;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 1;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3,
+#carousel-4:checked ~ .control-4{
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet {
+    color: #428bca;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 1;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+  /* Section Text */
+  .comptTextBR {
+    margin: 0 5%;
+    box-shadow: inset 0 0 5px #524f4b;
+    background: rgba(0, 0, 0, 0.87);
+    color: white;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .comptText {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    margin: 0px 10rem;
+    font-size: 32rem;
+  }
+  
+  /*news thumbnailssss*/
+
+  #aaaaaH{
+    align-items: center;
+    align-self: center;
+  }
+
+  #NewWdBC {
+    display:inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-content: center;
+    width: 100%;
+}
+
+.thumbnail {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.295);
+    overflow: hidden;
+    width:300px; 
+    display: flex;
+    max-height: 400px;
+    flex-direction: column; 
+    left: 40%;
+    
+    
+}
+
+.thumbnail img {
+    width: 300px; 
+    height: auto; 
+    overflow: hidden;
+    
+}
+
+.thumbnail .caption {
+    background: #b97208;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center; 
+}
+
+.thumbnail .thumbnail-text {
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+    text-align: justify; 
+}
+
+.thumbnail .ling-m {
+    display: inline-block;
+    margin: 10px auto; 
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+  
+  /* Footer */
+  footer {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: inset 0 0 10px #000000
+  }
+  
+  footer address {
+    font-style: normal;
+    line-height: 1.8;
+  }
+  
+  footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  footer a:after {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+    align-items: center;
+  }
+
+  .vid {
+    box-shadow: inset 0 1px 0 0  #3f3737;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.9)2%,rgba(41, 40, 40, 0.9)100%) ;
+    padding-left: 25%;
+    padding-right: 25%;
+    height: 500px;
+  }
+
+  #silkS{
+    padding-top: 10px;
+    border-radius: 5%;
+    position:relative;
+    width: 90%!important;
+    height:500px;
+  }
+
