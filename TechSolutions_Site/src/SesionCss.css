@@ -1,0 +1,136 @@
+:root {
+    --main-BC: #ffffff;
+    --2color: #2b80ff;
+    --main-text: #3c3450;
+    --rosa: #ff3e88;
+    --backdrop: #e4e3f3b9;
+    --card-bg: #f8f9fa;
+    --text-light: #ffffff;
+    --highlight: #6a11cb33;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--main-text);
+    background: linear-gradient(135deg, var(--2color) 0%, var(--rosa) 100%);
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    border-bottom: 2px solid var(--2color);
+}
+
+.navbar-brand h2 {
+    color: var(--2color);
+}
+
+.navbar-nav .nav-link {
+    color: var(--main-text);
+    transition: 0.3s ease;
+    border-radius: 14px;
+    padding: 8px 15px;
+    margin: 0 2px;
+    
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    background-color: #6a11cb33;
+    transform: translateY(-2px);
+}
+
+.log-contr {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+}
+
+.log-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    overflow: hidden;
+}
+
+.nav-bt {
+    background: var(--2color);
+    padding: 0;
+    font-weight: 500;
+    border-radius: 20px 20px 0 0;
+    transition: all 0.3s ease;
+    }
+
+.nav-bt .nav-link {
+    color: white;
+    border-radius: 20px 20px 0 0;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.nav-bt .nav-link.active {
+    background: linear-gradient(90deg, var(--2color), var(--rosa), var(--2color));
+    background-position: 0% 0;
+    border-radius: 20px 20px 0 0;
+    border: none;
+    color: white;
+    transition: left 0.4s ease;
+}
+
+.tab-cs {
+    padding: 30px;
+    border-radius: 20px 20px 0 0;
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 0.3s ease;
+}
+
+.tab-pane {
+    grid-row: 1;
+    border-radius: 20px 20px 0 0;
+    grid-column: 1;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.tab-pane.active {
+    opacity: 1;
+    transform: translateX(0);
+    border-radius: 20px 20px 0 0;
+    pointer-events: all;
+}
+.form-control:focus {
+    border-color: var(--highlight);
+    box-shadow: 0 0 0 0.5px rgba(242, 243, 245, 0.2);
+}
+
+/* Botones */
+.btn-primary {
+    background: linear-gradient(90deg, var(--rosa), var(--2color), var(--rosa));
+    background-size: 200% 100%;
+    background-position: 0% 0;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-position: 100% 0;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px rgba(242, 243, 245, 0.2);
+}
+
+.btn-lg {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+}
